@@ -1,4 +1,4 @@
-package com.hms.ecom.product_service;
+package com.hms.ecom.product;
 
 import org.springframework.boot.SpringApplication;
 

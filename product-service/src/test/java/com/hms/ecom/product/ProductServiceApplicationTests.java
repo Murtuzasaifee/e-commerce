@@ -1,7 +1,6 @@
-package com.hms.ecom.product_service;
+package com.hms.ecom.product;
 
 import io.restassured.RestAssured;
-import org.hamcrest.Matcher;
 import org.hamcrest.Matchers;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

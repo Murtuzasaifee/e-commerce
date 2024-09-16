@@ -1,9 +1,8 @@
-package com.hms.ecom.product_service.controller;
+package com.hms.ecom.product.controller;
 
-import com.hms.ecom.product_service.dto.ProductRequest;
-import com.hms.ecom.product_service.dto.ProductResponse;
-import com.hms.ecom.product_service.model.Product;
-import com.hms.ecom.product_service.service.ProductService;
+import com.hms.ecom.product.dto.ProductRequest;
+import com.hms.ecom.product.dto.ProductResponse;
+import com.hms.ecom.product.service.ProductService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
