@@ -1,4 +1,4 @@
-package com.hms.ecom.product.model;
+package com.ms.ecom.product.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

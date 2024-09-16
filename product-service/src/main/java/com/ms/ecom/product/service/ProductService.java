@@ -1,9 +1,9 @@
-package com.hms.ecom.product.service;
+package com.ms.ecom.product.service;
 
-import com.hms.ecom.product.dto.ProductRequest;
-import com.hms.ecom.product.dto.ProductResponse;
-import com.hms.ecom.product.model.Product;
-import com.hms.ecom.product.repository.ProductRepository;
+import com.ms.ecom.product.dto.ProductRequest;
+import com.ms.ecom.product.dto.ProductResponse;
+import com.ms.ecom.product.model.Product;
+import com.ms.ecom.product.repository.ProductRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;

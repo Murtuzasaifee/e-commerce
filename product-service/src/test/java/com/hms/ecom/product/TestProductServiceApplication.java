@@ -1,5 +1,6 @@
 package com.hms.ecom.product;
 
+import com.ms.ecom.product.ProductServiceApplication;
 import org.springframework.boot.SpringApplication;
 
 public class TestProductServiceApplication {
