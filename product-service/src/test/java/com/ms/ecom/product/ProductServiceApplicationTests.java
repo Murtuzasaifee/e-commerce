@@ -1,4 +1,4 @@
-package com.hms.ecom.product;
+package com.ms.ecom.product;
 
 import io.restassured.RestAssured;
 import org.hamcrest.Matchers;

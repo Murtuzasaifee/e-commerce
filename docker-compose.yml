@@ -1,0 +1,23 @@
+services:
+  mongodb:
+    image: mongo:7.0.5
+    container_name: mongodb
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: password
+      MONGO_INITDB_DATABASE: product-service
+    volumes:
+      - ./data/mongo:/data/db
+
+  mysql:
+    image: mysql:9.0.1
+    container_name: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: mysql
+    ports:
+      - "3308:3306"
+    volumes:
+      - ./data/mysql:/var/lib/mysql
+      - ./docker/mysql/init.sql:/docker-entrypoint-initdb.d/init.sql
