@@ -51,5 +51,4 @@ class ProductServiceApplicationTests {
 				.body("description", Matchers.equalTo("iPhone 16, a another marvel by Apple"));
 	}
 
-
 }
