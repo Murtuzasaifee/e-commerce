@@ -88,3 +88,10 @@ mongo-data/
 mongod.lock
 journal/
 diagnostic.data/
+
+# Keycloak-related files
+keycloak.log                # Ignore Keycloak log files
+*.realm.json                # Ignore exported realm files (can be generated again)
+data/                       # Keycloak database and data (if stored locally)
+standalone/data/            # Keycloak standalone mode data directory
+volume-data/
