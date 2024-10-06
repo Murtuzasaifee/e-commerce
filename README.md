@@ -7,9 +7,6 @@ This project is a **Java-based eCommerce application** built using a **microserv
 - **Product Management**: CRUD operations for products and categories.
 - **Order Management**: Placing, updating, and tracking customer orders.
 - **Inventory Service**: Managing stock levels for products.
-- **Payment Service**: Handling payments via different gateways.
-- **Customer Service**: Managing customer details, authentication, and authorization.
-- **Cart Service**: Allowing customers to add/remove items from the shopping cart.
 - **Notification Service**: Sending email/SMS notifications for order status.
 
 ## Microservices Architecture
@@ -39,30 +36,7 @@ The application is composed of several microservices, each running independently
     - `GET /inventory/{productId}`: Check stock for a product.
     - `PUT /inventory/{productId}`: Update stock levels for a product.
 
-### 4. **Payment Service**
-- **Language**: Java, Spring Boot
-- **Responsibilities**: Processes payments via multiple payment gateways.
-- **Database**: PostgreSQL
-- **REST Endpoints**:
-    - `POST /payment`: Process a payment.
-
-### 5. **Customer Service**
-- **Language**: Java, Spring Boot
-- **Responsibilities**: Manages customer data, authentication, and authorization.
-- **Database**: MySQL
-- **REST Endpoints**:
-    - `POST /customers/register`: Register a new customer.
-    - `POST /customers/login`: Authenticate a customer.
-
-### 6. **Cart Service**
-- **Language**: Java, Spring Boot
-- **Responsibilities**: Manages the shopping cart.
-- **Database**: Redis (for fast in-memory operations).
-- **REST Endpoints**:
-    - `POST /cart`: Add items to the cart.
-    - `GET /cart`: Retrieve current cart items.
-
-### 7. **Notification Service**
+### 4. **Notification Service**
 - **Language**: Java, Spring Boot
 - **Responsibilities**: Sends notifications to customers via email or SMS.
 - **External APIs**: Integrates with an email/SMS provider (e.g., SendGrid, Twilio).
