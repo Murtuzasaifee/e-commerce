@@ -1,13 +1,14 @@
 # eCommerce Microservices Project
 
 ## Overview
-This project is a **Java-based eCommerce application** built using a **microservices architecture**. It is designed to demonstrate how to build scalable, modular, and maintainable applications by dividing the system into loosely coupled services. Each microservice handles a specific business function (e.g., Product Catalog, Inventory, Orders, Payment) and communicates with others over HTTP (REST API) or messaging systems.
+This project is a **Java-based eCommerce application** built using a **microservices architecture**. It is designed to demonstrate how to build scalable, modular, and maintainable applications by dividing the system into loosely coupled services. Each microservice handles a specific business function (e.g., Product Catalog, Inventory, Orders) and communicates with others over HTTP (REST API) or messaging systems. This template project can be used to 
 
 ## Features
 - **Product Management**: CRUD operations for products and categories.
 - **Order Management**: Placing, updating, and tracking customer orders.
 - **Inventory Service**: Managing stock levels for products.
-- **Notification Service**: Sending email/SMS notifications for order status.
+- **Notification Service**: Sending email/SMS notifications for order status
+- **Authorization/Authentication**: Authorization/Authentication using Keycloak.
 
 ## Microservices Architecture
 The application is composed of several microservices, each running independently and interacting with one another. Below is a brief description of each service:
@@ -46,6 +47,7 @@ The application is composed of several microservices, each running independently
 ## Tech Stack
 - **Java**: Core programming language.
 - **Spring Boot**: Framework used for building microservices.
+- **Keycloak**: Authorization/Authentication using Oauth2.0
 - **MySQL / PostgreSQL / Redis**: Databases used for different services.
 - **RabbitMQ / Kafka**: Messaging system for inter-service communication.
 - **Docker**: Containerization for microservices.
