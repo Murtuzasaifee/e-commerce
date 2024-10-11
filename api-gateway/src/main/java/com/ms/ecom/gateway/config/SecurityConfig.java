@@ -12,19 +12,14 @@ import org.springframework.security.web.SecurityFilterChain;
 @Configuration
 public class SecurityConfig {
 
-/*    // Inject the 'jwk-set-uri' from properties
-    @Value("${spring.security.oauth2.resourceserver.jwt.jwk-set-uri}")
-    private String jwkSetUri;
-
-    @Bean
-    public JwtDecoder jwtDecoder() {
-        // Use the injected jwkSetUri
-        return NimbusJwtDecoder.withJwkSetUri(jwkSetUri).build();
-    }*/
+    private final String[] freeResourceUrls = {"/swagger-ui.html", "/swagger-ui/**", "/v3/api-docs/**",
+            "/swagger-resources/**", "/api-docs/**", "/aggregate/**"};
 
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity httpSecurity) throws Exception {
-        return  httpSecurity.authorizeHttpRequests(authorize -> authorize.anyRequest()
+        return  httpSecurity.authorizeHttpRequests(authorize -> authorize
+                        .requestMatchers(freeResourceUrls).permitAll()
+                        .anyRequest()
                 .authenticated())
                 .oauth2ResourceServer(oauth2 -> oauth2.jwt(Customizer.withDefaults()))
                 .build();
